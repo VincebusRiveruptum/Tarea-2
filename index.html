@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/pagina.css">
+    <title>Encuesta</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    
+<div class="container">
+    <main>
+      <div class="py-5 text-center">
+        
+        <h2>Encuesta</h2>
+        <p class="lead">La Pontifica Universidad Católica de Valparaiso te quiere conocer y saber tu opinión sobre tu escuela. La escuela de Ingeniería Informática quiere saber cuales son tus preferencias a la hora de programar, que cursos te han parecido los mas dificiles y sobre tu desempeño en la carrera.</p>
+      </div>
+  
+      <div class="row g-5">
+          <!--Columna central de encuesta-->
+        <div class="col">
+            <h4 class="mb-3">Ingrese su información</h4>
+            <form class="needs-validation" novalidate>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Ingrese un nombre válido, porfavor.
+                            </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Ingrese un apellido válido, porfavor.
+                        </div>
+                    </div>
+
+                    <!--Correo Electronico-->
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+                        <input type="email" class="form-control" id="email" placeholder="tu@ejemplo.com" required>
+                        <div class="invalid-feedback">
+                        Ingrese un e-mail válido, porfavor.
+                        </div>
+                    </div>
+
+                    <!--RUT-->
+                    <div class="col-12">
+                        <label for="RUT" class="form-label">RUT</label>
+                        <input type="text" class="form-control" id="address" placeholder="12345678-9" required>
+                        <div class="invalid-feedback">
+                        Porfavor ingrese su rut.
+                        </div>
+                    </div>
+
+                    <!--Telefono-->
+                    <div class="col-12">
+                        <label for="telefono" class="form-label">Celular <span class="text-muted"></span></label>
+                        <input type="text" class="form-control" id="telefono" placeholder="912345678" required>
+                        <div class="invalid-feedback">
+                            Porfavor ingrese su número de telefono.
+                        </div>
+                    </div>
+                  
+                    <!--Preguntas-->
+                    <hr class="my-4">
+                    <div class="check-group">
+                        <h4 class="mb-3">Preguntas</h4>
+
+                        <h4 class="mb-3">¿Cual es su lenguaje de programación de preferencia?</h4>
+                            <!--Phyton-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-phyton" >
+                                <label class="form-check-label" for="check-phyton">Python</label>
+                            </div>
+                            
+                            <!--TypeScript-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-ts" >
+                                <label class="form-check-label" for="check-ts">TypeScript</label>
+                            </div>
+                            <!--C++-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-cpp" > 
+                                <label class="form-check-label" for="check-cpp">C++</label>
+                            </div>
+                            <!--C#-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-csharp" >
+                                <label class="form-check-label" for="check-csharp">C#</label>
+                            </div>                                
+                            <!--PHP-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-php" >
+                                <label class="form-check-label" for="check-php">PHP</label>
+                            </div>
+                            <!--Ruby On Rails-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-ruby" >
+                                <label class="form-check-label" for="check-ruby">Ruby On Rails</label>
+                            </div>
+                            <!--Java-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-java" >
+                                <label class="form-check-label" for="check-java">Java</label>
+                            </div>
+                            <!--R-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-r" >
+                                <label class="form-check-label" for="check-r">R</label>
+                            </div>
+                            <!--Groovy-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-groovy" >
+                                <label class="form-check-label" for="check-groovy">Groovy</label>
+                            </div>                                
+                            <!--Go-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-go" >
+                                <label class="form-check-label" for="check-go">Go</label>
+                            </div>
+                            <!--Swift-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-swift" >
+                                <label class="form-check-label" for="check-swift">Swift</label>
+                            </div>   
+                            <!--Kotlin-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="check-kotlin">
+                                <label class="form-check-label" for="check-kotlin">Kotlin</label>
+                            </div>  
+                    </div>           
+                    <!-- Nivel de programacion-->
+                    <hr class="my-4">
+                        <h4 class="mb-3">¿Cual es su nivel de experiencia en programación?</h4>
+                        <div class="my-3">
+                            <!--Nivel bajo-->
+                            <div class="form-check">
+                            <input id="nivelbajo" name="nivelexperiencia" type="radio" class="form-check-input">
+                            <label class="form-check-label" for="nivelbajo">Bajo</label>
+                            </div>
+                            <!--Nivel medio-->
+                            <div class="form-check">
+                            <input id="nivelmedio" name="nivelexperiencia" type="radio" class="form-check-input" checked >
+                            <label class="form-check-label" for="nivelmedio">Medio</label>
+                            </div>
+                            <!--Nivel alto-->
+                            <div class="form-check">
+                            <input id="nivelalto" name="nivelexperiencia" type="radio" class="form-check-input">
+                            <label class="form-check-label" for="nivelalto">Alto</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+
+                    <!-- Nivel de programacion de java, c y phyton-->
+                    
+                    <h4>¿Cual es su nivel de conocimiento en los siguientes lenguajes?</h4>
+                    <div class="my-3">
+                        <!--Phyton-->
+                        <div class="form-group">
+                        <ul>
+                            <li>Phyton</li>
+                            <input type="range" id="rangopython" name="rangopython" min="0" max="10">
+                            <label for="rangopython"></label>
+            
+                        </ul>
+                        </div>
+                        <!--Java-->
+                        <div class="form-group">
+                            <ul>
+                                <li>Java</li>
+                                <input type="range" id="rangojava" name="rangojava" min="0" max="10">
+                                <label for="rangojava"></label>
+                            </ul>
+                            </div>
+                        <!--C++-->
+                        <div class="form-group">
+                            <ul>
+                                <li>C++</li>
+                                <input type="range" id="rangocpp" name="rangocpp" min="0" max="10">
+                                <label for="rangocpp"></label>
+                            </ul>
+                            </div>
+                    </div>
+                    
+                    <!-- Curso mas dificil-->
+                    <hr class="my-4">
+                    <h4>¿Cual curso se le hizo mas dificil?</h4>
+                    <div class="my-4">
+                        <!--Estructura de Datos-->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check-ed" >
+                            <label class="form-check-label" for="check-ed">Estructura de Datos</label>
+                        </div> 
+                        <!--Inteligencia Artificial-->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check-AI" >
+                            <label class="form-check-label" for="check-AI">Inteligencia Artificial</label>
+                        </div> 
+                        <!--Interaccion Humano-Computador-->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check-IHC" >
+                            <label class="form-check-label" for="check-IHC">Interaccion Humano-Computador</label>
+                        </div> 
+                        <!--Sistemas Operativos-->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check-so" >
+                            <label class="form-check-label" for="check-so">Sistemas Operativos</label>
+                        </div> 
+                        <!--Otro-->
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="check-otroramo" onclick="activarOpcionOtroRamo()">
+                            <label class="form-check-label" for="check-otroramo">Otro</label>
+                            <div class="col-4">
+                                <!--Textbox de para indicar otro ramo...-->
+                                <input type="text" class="form-control" id="textoOtroRamo" style="display:none">
+                            </div>
+                        </div> 
+                    </div>
+                
+                    <!-- Opinion-->
+                    <hr class="my-4"></hr>
+
+                    <h4>¿Que opinas sobre la escuela?</h4>
+                    <div class="my-4">
+                        <!--TextArea-->
+                        <div class="form-group">
+                            <textarea class="form-control rounded-0" type="text" id="texto-opinion" rows="10" required></textarea>
+                    
+                        </div>          
+                    </div>
+                
+                <hr class="my-4">
+
+                <!--Botones-->
+                    <div class="my-4">
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar respuestas</button>
+                        <button class="w-100 btn btn-primary btn-lg" type="cancel">Cancelar</button>
+
+                    </div>
+
+                </div>
+            </form>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017–2021 Company Name</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    </div>
+    <!--Scripts-->
+  
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/validacion.js"></script>
+</body>
+</html>
